@@ -3,6 +3,7 @@
 	"version": "0.1",
 	"manifest_version" : 2,
 	"description": "Social media searching at your fingertips.",
+	"omnibox": { "keyword" : "recall" },
 	"background" : {
 		"page" : "background.html"
 	},

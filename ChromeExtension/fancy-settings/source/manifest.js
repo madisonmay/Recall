@@ -1,6 +1,6 @@
 // SAMPLE
 this.manifest = {
-    "name": "My Extension",
+    "name": "Recall",
     "icon": "icon.png",
     "settings": [
         {
