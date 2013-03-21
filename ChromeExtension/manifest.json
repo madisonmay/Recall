@@ -3,7 +3,7 @@
 	"version": "0.1",
 	"manifest_version" : 2,
 	"description": "Social media search at your fingertips.",
-	"permissions": ["tabs"],
+	"permissions": ["tabs", "contextMenus"],
 	"omnibox": { "keyword" : "recall" },
 	"background" : {
 		"page" : "background.html"
