@@ -8,11 +8,11 @@ chrome.extension.onMessage.addListener(
     sendResponse(settings.toObject());
   });
 
-var google_query = 'https://www.google.com/images?q='
+var base_url = 'http://recall-api.herokuapp.com/search/facebook?q='
 
 function selectionOnClick(info, tab) {
     var input = encodeURIComponent(info.selectionText);
-    chrome.tabs.create({"url" : google_query + input, "active" : true});
+    chrome.tabs.create({"url" : base_url + input, "active" : true});
 }
 
 chrome.contextMenus.create({
@@ -23,7 +23,7 @@ chrome.contextMenus.create({
 
 function omni(inString) {
     var input = encodeURIComponent(inString);
-    chrome.tabs.create({"url" : google_query + input, "active" : true});
+    chrome.tabs.create({"url" : base_url + input, "active" : true});
 }
 
 chrome.omnibox.onInputEntered.addListener(omni);

@@ -17,4 +17,7 @@ chrome.extension.sendMessage({}, function(response) {
 
 $(document).ready(function(){
     console.log("Document is ready...");
+    $.get('http://www.google.com', function(data){
+        console.log(data);
+    });
 });
