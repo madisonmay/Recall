@@ -8,7 +8,7 @@ chrome.extension.onMessage.addListener(
     sendResponse(settings.toObject());
   });
 
-var base_url = 'http://recall-api.herokuapp.com/search/facebook?q='
+var base_url = 'http://recall-api.herokuapp.com/search?q='
 
 function selectionOnClick(info, tab) {
     var input = encodeURIComponent(info.selectionText);
